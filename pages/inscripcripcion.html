@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS 5.1 inicia -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BS 5.1 fin -->
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Inscripcion</title>
+</head>
+<body>
+    <!-- inscripcion inicia -->
+    <h2 class="h2" id="inscripcion">Inscripción</h2>
+    <h3 class="h3">Completa tus datos para inscribirte</h3>
+    <div class="container-fluid inscri">
+        <div class="row">
+
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Ingresa tu nombre" required>
+                    <div class="valid-feedback">
+                        Ingreso valido
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa tu apellido" required>
+                    <div class="valid-feedback">
+                        Ingreso valido
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Nombre de correo</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="email" class="form-control" placeholder="ingresa tu correo electronico" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresa tu correo electronico
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Ciudad o localidad</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu ciudad" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa una localidad correcta
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Provincia</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Elige...</option>
+                        <option>Jujuy</option>
+                        <option>Salta</option>
+                        <option>Tucuman</option>
+                        <option>Catamarca</option>
+                        <option>La Rioja</option>
+                        <option>San juan</option>
+                        <option>Formosa</option>
+                        <option>Chaco</option>
+                        <option>Misiones</option>
+                        <option>Corrientes</option>
+                        <option>Santiago del Estero</option>
+                        <option>Entre Rios</option>
+                        <option>Cordoba</option>
+                        <option>San Luis</option>
+                        <option>Santa Fe</option>
+                        <option>Buenos Aires</option>
+                        <option>La Pampa</option>
+                        <option>Mendoza</option>
+                        <option>Rio Negro</option>
+                        <option>Neuquen</option>
+                        <option>Chubut</option>
+                        <option>Santa Cruz</option>
+                        <option>Tierra del Fuego</option>
+                        <option>Otro</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor ingresa una ciudad correcta
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom01" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="validationCustom04" value="Ingresa tu numero" placeholder="Ingresa tu numero" required>
+                    <div class="valid-feedback">
+                        Ingreso valido
+                    </div>
+                </div>
+                <h3>Que dias puedes cursar?</h3>
+                <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Lunes
+                    </label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Martes
+                    </label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Miercoles
+                    </label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Jueves
+                    </label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Viernes
+                    </label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Sabado
+                    </label>
+                  </div>
+                  <h3>En que horarios podes cursar?</h3>
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Mañana
+                    </label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Tarde
+                    </label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Noche
+                    </label>
+                  </div>
+                  <h3>Califica con un numero del 1 al 10 en cuanto al manejo de tu pc</h3>
+                  <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Selecciona</option>
+                                <option value="1">Uno</option>
+                                <option value="2">Dos</option>
+                                <option value="3">Tres</option>
+                                <option value="4">cuatro</option>
+                                <option value="5">cinco</option>
+                                <option value="6">seis</option>
+                                <option value="7">siete</option>
+                                <option value="8">ocho</option>
+                                <option value="9">nueve</option>
+                                <option value="10">Diez</option>
+                              </select>
+                        </div>
+                    </div>
+                  </div>
+                  <h3>Posees conocimiento en el mundo de la programación?</h3>
+                  <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Selecciona</option>
+                                <option value="1">Si</option>
+                                <option value="2">un poco</option>
+                                <option value="3">nada</option>
+                              </select>
+                        </div>
+                    </div>
+                  </div>
+                  <h3>Si tienes que calificarte del 1 al 10 en cuanto a conocimientos en programacion con cuanto lo harias?</h3>
+                  <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Selecciona</option>
+                                <option value="1">Uno</option>
+                                <option value="2">Dos</option>
+                                <option value="3">Tres</option>
+                                <option value="4">cuatro</option>
+                                <option value="5">cinco</option>
+                                <option value="6">seis</option>
+                                <option value="7">siete</option>
+                                <option value="8">ocho</option>
+                                <option value="9">nueve</option>
+                                <option value="10">Diez</option>
+                              </select>
+                        </div>
+                    </div>
+                  </div>
+                  <h3>Tienes conocimiento en alguna de las siguientes tecnologias?</h3>
+                  <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Selecciona</option>
+                                <option value="1">Uno</option>
+                                <option value="2">Dos</option>
+                                <option value="3">Tres</option>
+                                <option value="4">cuatro</option>
+                                <option value="5">cinco</option>
+                                <option value="6">seis</option>
+                                <option value="7">siete</option>
+                                <option value="8">ocho</option>
+                                <option value="9">nueve</option>
+                                <option value="10">Diez</option>
+                              </select>
+                        </div>
+                    </div>
+                  </div>
+                <div class="col-12">
+                    <div class="form-check d-flex justify-content-center">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Acepta proveer todos estos datos para la inscripcion del curso?
+                        </label>
+                        <div class="invalid-feedback">
+                            Debes aceptar para poder inscribirte
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary mb-5" type="submit">Submit form</button>
+                </div>
+            </form>
+
+
+            <!-- ----------------------------------------------------------------- -->
+            
+            <a href="https://70k4tqvu3w6.typeform.com/to/h4RYVBWi">Incribete ahora</a>
+        </div>
+    </div>
+    <!-- inscripcion fin -->
+
+
+
+    <!-- BS 5.1 inicia -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- BS 5.1 fin -->
+</body>
+</html>
